@@ -40,4 +40,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - run: echo "Deploying app ${{ github.event.inputs.appname }} to ${{ github.event.inputs.environment }} environment"
+      - run: |
+          echo "App Name: ${{ inputs.appname }}"
+          echo "App Type: ${{ inputs.apptype }}"
+          echo "Environment: ${{ inputs.environment }}"
