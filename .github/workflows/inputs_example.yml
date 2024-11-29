@@ -23,7 +23,7 @@ on:
       environment:
         description: "The deployment environment"
         required: true
-        type: environment
+        default: "dev"
       notify:
         description: "Notify deployment"
         required: true
